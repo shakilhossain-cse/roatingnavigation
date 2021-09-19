@@ -25,8 +25,8 @@ body{
     transform: translateX(0);
     transition-delay: 0.3s;
 }
-.container.show-nav .circle{
-    transform: rotate(-70deg);
+ #close{
+    display: none;
 }
 .circle-container{
     position: fixed;
@@ -36,8 +36,8 @@ body{
 .circle{
     background-color: tomato;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     position: relative;
     transition: transfrom 1s linear;
 }
@@ -46,8 +46,8 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     background-color: transparent;
     border: none;
     font-size: 2rem;
@@ -56,15 +56,7 @@ body{
 .circle button:focus{
     outline: none;
 }
-.circle button#close{
-    left: 50%;
-}
-.circle button#open{
-  
-    top: 50%;
-    transform: rotate(90deg);
-    transform-origin: top left;
-}
+
 .content img{
     max-width: 100%;
 }
